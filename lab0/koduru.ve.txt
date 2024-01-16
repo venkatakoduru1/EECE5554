@@ -1,0 +1,2 @@
+1) Installed Ubuntu 20.04 LTS on virtualbox 7 vm
+2)I am ready to use git and github
