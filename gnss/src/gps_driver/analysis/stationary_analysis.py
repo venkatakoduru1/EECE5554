@@ -82,6 +82,12 @@ def analyze_stationary_data(open_df, occluded_df):
     # Combine distances for Open and Occluded data
     distances = np.concatenate((open_distances, occluded_distances))
 
+
+    distance1=np.mean(open_distances)
+    distance2=np.mean(occluded_distances)
+    print("error for open data",distance1)
+    print("error for occluded data",distance2)
+
     # Plot histogram of distances for both Open and Occluded data
     plt.figure()
     plt.hist(open_distances, bins=20, alpha=0.5, label='Open Spot - Distance from Centroid', color='blue')

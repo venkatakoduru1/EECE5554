@@ -75,7 +75,7 @@ def analyze_moving_data(df, location_type):
 
 if __name__ == '__main__':
     # Load ROS bag data
-    walking_df = load_rosbag('/home/karthikkoduru1/catkin_ws/src/gps_driver/src/data/walking1.bag', '/chatter')
+    walking_df = load_rosbag('/home/karthikkoduru1/lab2_bagfiles/walkingRTK.bag', '/gps')
 
     print("DataFrame shape:", walking_df.shape)  # Check DataFrame shape
 

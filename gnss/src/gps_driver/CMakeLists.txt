@@ -52,6 +52,12 @@ add_message_files(
   Customgps.msg
 )
 
+## Generate messages in the 'msg' folder
+add_message_files(
+  FILES
+  Customrtk.msg
+)
+
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
