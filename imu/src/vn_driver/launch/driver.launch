@@ -1,0 +1,9 @@
+<launch>
+    
+    <arg name="port" default="/dev/ttyUSB0" />
+
+    <node name="driver" pkg="vn_driver" type="driver.py" output="screen">
+        <!-- Remap the serial port parameter to the argument value -->
+        <param name="port" value="$(arg port)" />
+    </node>
+</launch>
